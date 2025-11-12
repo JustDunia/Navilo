@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+  </Folder>
+  <Project Path="Navilo.ApiService/Navilo.ApiService.csproj" />
+  <Project Path="Navilo.AppHost/Navilo.AppHost.csproj" />
+  <Project Path="Navilo.ServiceDefaults/Navilo.ServiceDefaults.csproj" />
+  <Project Path="Navilo.Tests/Navilo.Tests.csproj" />
+  <Project Path="Navilo.Web/Navilo.Web.csproj" />
+</Solution>

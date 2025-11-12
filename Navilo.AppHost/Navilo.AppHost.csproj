@@ -1,0 +1,17 @@
+﻿<Project Sdk="Aspire.AppHost.Sdk/13.0.0">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <UserSecretsId>e34f86c2-455a-48c8-8dd5-a27dfbbd5480</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Navilo.ApiService\Navilo.ApiService.csproj" />
+    <ProjectReference Include="..\Navilo.Web\Navilo.Web.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.Redis" Version="13.0.0" />
+  </ItemGroup>
+
+</Project>
