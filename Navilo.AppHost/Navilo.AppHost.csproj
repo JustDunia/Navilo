@@ -7,10 +7,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Navilo.ApiService\Navilo.ApiService.csproj" />
-    <ProjectReference Include="..\Navilo.Web\Navilo.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="13.0.0" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="13.0.0" />
   </ItemGroup>
 

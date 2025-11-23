@@ -1,16 +1,17 @@
+using Navilo.AppHost;
+
 var builder = DistributedApplication.CreateBuilder(args);
 
-var cache = builder.AddRedis("cache");
+//var cache = builder.AddRedis("cache");
+
+var postgres = builder.AddPostgres("postgres")
+    .WithPgAdmin();
+var naviloDb = postgres.AddDatabase("naviloDb");
 
 var apiService = builder.AddProject<Projects.Navilo_ApiService>("apiservice")
-    .WithHttpHealthCheck("/health");
-
-builder.AddProject<Projects.Navilo_Web>("webfrontend")
-    .WithExternalHttpEndpoints()
     .WithHttpHealthCheck("/health")
-    .WithReference(cache)
-    .WaitFor(cache)
-    .WithReference(apiService)
-    .WaitFor(apiService);
+    .WithScalar()
+    .WithReference(naviloDb)
+    .WaitFor(naviloDb);
 
 builder.Build().Run();

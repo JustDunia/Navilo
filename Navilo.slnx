@@ -7,5 +7,4 @@
   <Project Path="Navilo.AppHost/Navilo.AppHost.csproj" />
   <Project Path="Navilo.ServiceDefaults/Navilo.ServiceDefaults.csproj" />
   <Project Path="Navilo.Tests/Navilo.Tests.csproj" />
-  <Project Path="Navilo.Web/Navilo.Web.csproj" />
 </Solution>
