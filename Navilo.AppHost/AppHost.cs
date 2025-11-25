@@ -14,4 +14,9 @@ var apiService = builder.AddProject<Projects.Navilo_ApiService>("apiservice")
     .WithReference(naviloDb)
     .WaitFor(naviloDb);
 
+builder.AddViteApp(name: "navilo-web", workingDirectory: "../navilo-web")
+    .WithReference(apiService)
+    .WaitFor(apiService)
+    .WithNpmPackageInstallation();
+
 builder.Build().Run();
