@@ -14,8 +14,8 @@ function FullLogo({ width, height, size }: LogoProps) {
 		>
 			<defs>
 				<linearGradient id='grad1' x1='0%' y1='0%' x2='0%' y2='100%'>
-					<stop offset='0%' stop-color='#00cba9' />
-					<stop offset='100%' stop-color='#0056b3' />
+					<stop offset='0%' stopColor='#00cba9' />
+					<stop offset='100%' stopColor='#0056b3' />
 				</linearGradient>
 			</defs>
 			<rect width='512' height='512' rx='100' fill='#f8f9fb' />
@@ -25,43 +25,43 @@ function FullLogo({ width, height, size }: LogoProps) {
 					<path
 						d='M156 24L30 96V240L156 312L282 240V96L156 24Z'
 						stroke='url(#grad1)'
-						stroke-width='12'
+						strokeWidth='12'
 						fill='none'
-						stroke-linejoin='round'
+						strokeLinejoin='round'
 					/>
 					<path
 						d='M156 168V24 M156 168V312 M156 168L30 96 M156 168L282 96'
 						stroke='url(#grad1)'
-						stroke-width='12'
+						strokeWidth='12'
 						fill='none'
-						stroke-linecap='round'
+						strokeLinecap='round'
 					/>
 
 					<path
 						d='M96 264V120L216 264V84'
 						stroke='url(#grad1)'
-						stroke-width='24'
+						strokeWidth='24'
 						fill='none'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
 					<path
 						d='M186 114L216 84L246 114'
 						stroke='url(#grad1)'
-						stroke-width='24'
+						strokeWidth='24'
 						fill='none'
-						stroke-linecap='round'
-						stroke-linejoin='round'
+						strokeLinecap='round'
+						strokeLinejoin='round'
 					/>
 				</g>
 				<text
 					x='256'
 					y='450'
-					font-family='Calibri, sans-serif'
-					font-weight='bold'
-					font-size='100'
+					fontFamily='Calibri, sans-serif'
+					fontWeight='bold'
+					fontSize='100'
 					fill='#001f3f'
-					text-anchor='middle'
+					textAnchor='middle'
 				>
 					Navilo
 				</text>

@@ -1,10 +1,10 @@
 import './App.css'
-import Navbar from './Navbar/Navbar'
+import RegisterForm from './Register/RegisterForm'
 
 function App() {
 	return (
 		<>
-			<Navbar />
+			<RegisterForm />
 		</>
 	)
 }
